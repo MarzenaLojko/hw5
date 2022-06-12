@@ -661,6 +661,19 @@ header {
 
 /* hw5 */
 
+.animation-modal {
+  transition-property: color, background-color, box-shadow, transform, border-color, opacity, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.modal-icon-close {
+  margin: auto;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
 .backdrop {
   position: fixed;
   display: flex;
@@ -671,12 +684,6 @@ header {
   left: 0;
   background-color: hsla(0, 0%, 0%, 0.2);
 }
-.animation-modal {
-  transition-property: color, background-color, box-shadow, transform, border-color, opacity, visibility;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
 .modal-window {
   background-color: #fff;
   min-width: 528px;
@@ -701,11 +708,4 @@ header {
   visibility: hidden;
 }
 
-.modal-icon-close {
-  margin: auto;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
 
