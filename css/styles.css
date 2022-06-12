@@ -658,3 +658,56 @@ header {
   background-color: #2196f3;
   color:#fff;
 }
+
+/* hw5 */
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  cursor: not-allowed;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, 0.2);
+}
+.animation-modal {
+  transition-property: color, background-color, box-shadow, transform, border-color, opacity, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.modal-window {
+  background-color: #fff;
+  min-width: 528px;
+  min-height: 581px;
+  cursor: auto;
+  margin: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 8px;
+  position: relative;
+}
+.modal-close-btn {
+  position: absolute;
+  display: flex;
+  top: 8px;
+  background-color: transparent;
+  right: 8px;
+  border: 1px solid #0000001a;
+  border-radius: 50%;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-icon-close {
+  margin: auto;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
