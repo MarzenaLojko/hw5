@@ -179,6 +179,10 @@ h3 {
 .we-do-img {
   min-width: 370px;
   display: block;
+  position: relative;
+}
+.fig-pos-rel{
+  position: relative;
 }
 .we-do-image-description {
   display: flex;
@@ -194,6 +198,7 @@ h3 {
   padding: 27px 0;
   left: 0px;
   bottom: 0px;
+  position: absolute;
   width: 100%;
 }
 
